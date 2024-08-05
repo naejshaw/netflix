@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="./styles/main.css">
     <!--responsive-->
     <link rel="stylesheet" href="./styles/responsive.css">
-    <!-- owl css -->
-    <link rel="stylesheet" href="./styles/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="./styles/owl/owl.theme.default.min.css">
     <title>Netflix Clone</title>
 </head>
 <body>
@@ -35,30 +32,44 @@
             </div>
         </div>
     </main>
-    <section class="film-carousel">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="box-film" src="./assets/img/atlas.jpg" alt="">
+
+    <section class="film-carousel">        
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="assets/img/alerta.jpg" style="width:50%; min-width: 200px;">
             </div>
-            <div class="item">
-                <img class="box-film" src="./assets/img/code8.jpg" alt="">
+
+            <div class="mySlides fade">
+                <img src="assets/img/atlas.jpg" style="width:50%; min-width: 200px;">
             </div>
-            <div class="item">
-                <img class="box-film" src="./assets/img/donzela.jpg" alt="">
+
+            <div class="mySlides fade">
+                <img src="assets/img/code8.jpg" style="width:50%; min-width: 200px;">
             </div>
-            <div class="item">
-                <img class="box-film" src="./assets/img/lift.jpg" alt="">
+
+            <div class="mySlides fade">
+                <img src="assets/img/donzela.jpg" style="width:50%; min-width: 200px;">
             </div>
-            <div class="item">
-                <img class="box-film" src="./assets/img/alerta.jpg" alt="">
+            
+            <div class="mySlides fade">
+                <img src="assets/img/lift.jpg" style="width:50%; min-width: 200px;">
             </div>
         </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
     </section>
-    <footer></footer>
 
     <script src="https://kit.fontawesome.com/4e99910185.js"></script>
-    <script src="./js/owl/setup.js"></script>
-    <script src="./js/owl/jquery.min.js"></script>
-    <script src="./js/owl/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
